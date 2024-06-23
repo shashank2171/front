@@ -38,8 +38,8 @@ const LoginPage = () => {
 
     try {
       const url = isSignInForm 
-        ? 'http://testing-rouge-seven.vercel.app/api/v1/auth/signin' 
-        : 'http://testing-rouge-seven.vercel.app/api/v1/auth/signup';
+        ? 'https://testing-rouge-seven.vercel.app/api/v1/auth/signin' 
+        : 'https://testing-rouge-seven.vercel.app/api/v1/auth/signup';
       const response = await axios.post(url, formData);
       console.log(response.data);
 
